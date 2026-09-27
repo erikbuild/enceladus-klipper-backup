@@ -1,4 +1,3 @@
-[include prusawire_demo.cfg]
 [gcode_arcs]
 [exclude_object]
 
