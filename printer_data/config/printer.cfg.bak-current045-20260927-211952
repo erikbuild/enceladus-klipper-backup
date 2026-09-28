@@ -130,25 +130,14 @@ rotation_distance: 32
 
 # spreadCycle at every speed: stealthChop loses torque at speed, and a
 # 45-degree CoreXZ move turns one motor 1.41x faster than the toolhead.
-# The CoreXZ motors (MK3 X and E motors, LDO-42STH40-1004A, rated 1.0 A)
-# run and hold at 0.45 A for more torque lifting the gantry.
 [tmc2130 stepper_x]
 stealthchop_threshold: 0
-run_current: 0.45
-hold_current: 0.45
 
 [tmc2130 stepper_y]
 stealthchop_threshold: 0
 
 [tmc2130 stepper_z]
 stealthchop_threshold: 0
-run_current: 0.45
-hold_current: 0.45
-
-# X homes at run_current / divisor. 0.45 / 3.879 = 0.116 A, the same homing
-# current as 0.348 / 3, so driver_SGT stays tuned.
-[gcode_macro _HOME_X]
-variable_home_current_divisor: 3.879
 
 #*# <---------------------- SAVE_CONFIG ---------------------->
 #*# DO NOT EDIT THIS BLOCK OR BELOW. The contents are auto-generated.
