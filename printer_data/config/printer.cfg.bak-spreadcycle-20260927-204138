@@ -125,20 +125,6 @@ rotation_distance: 32
 [stepper_z]
 rotation_distance: 32
 
-#########################
-#### Stepper drivers
-
-# spreadCycle at every speed: stealthChop loses torque at speed, and a
-# 45-degree CoreXZ move turns one motor 1.41x faster than the toolhead.
-[tmc2130 stepper_x]
-stealthchop_threshold: 0
-
-[tmc2130 stepper_y]
-stealthchop_threshold: 0
-
-[tmc2130 stepper_z]
-stealthchop_threshold: 0
-
 #*# <---------------------- SAVE_CONFIG ---------------------->
 #*# DO NOT EDIT THIS BLOCK OR BELOW. The contents are auto-generated.
 #*#
