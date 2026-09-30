@@ -43,9 +43,6 @@ serial: /dev/serial/by-id/usb-Klipper_stm32g0b1xx_1E003F000351353032333039-if00
 #### PROBES
 
 ##### SuperPINDA on LDO Nitehawk SB V2
-# super_pinda__ldo_nitehawk_sb.cfg doesn't include the common SuperPINDA
-# settings (probe offset, sampling, bed mesh), so include them here.
-[include prusawire/probes/super_pinda__common.cfg]
 [include prusawire/probes/super_pinda__ldo_nitehawk_sb_v2.cfg]
 
 #########################
